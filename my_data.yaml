@@ -1,0 +1,16 @@
+# # 数据集路径
+# path: datasets/my_dataset  # 数据集根目录
+# train: images/train        # 训练集相对路径
+# val: images/val            # 验证集相对路径
+
+# # 类别
+# nc: 2                      # 你要识别的类别数量（改成你的）
+# names: ['cat', 'dog']      # 类别名称（改成你的）
+
+path: E:\sx_yolo26\detect_smoke # dataset root dir
+train: train\\images
+val: valid\\images
+
+
+nc: 1
+names: ['smoke']

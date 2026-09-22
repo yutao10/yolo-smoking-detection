@@ -1,0 +1,15 @@
+数据集说明
+
+样本分类输出（中文）：抽烟
+样本分类输出（英文）：smoke
+样本分类输出数量：1
+
+
+训练集train： 6145个样本
+验证集valid： 1230个样本
+
+训练集和验证集样本比例：约5:1
+
+yolo8训练命令行参考：yolo detect train model=yolov8n.pt data=detect_smoke/data.yaml batch=16 epochs=1 imgsz=640 device=cuda
+
+

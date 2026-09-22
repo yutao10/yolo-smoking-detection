@@ -1,0 +1,7 @@
+path: E:\sx_yolo26\detect_smoke # dataset root dir
+train: train\\images
+val: valid\\images
+
+
+nc: 1
+names: ['smoke']
