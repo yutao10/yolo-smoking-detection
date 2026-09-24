@@ -1,39 +1,21 @@
-# ===== Python 缓存 =====
-__pycache__/
-*.py[cod]
-*.egg-info/
+# ===== 白名单模式：默认忽略所有文件 =====
+*
 
-# ===== 数据集图片（约 924MB，通过网盘分发，不进 git）=====
-detect_smoke/train/
-detect_smoke/valid/
-*.cache
+# ===== 保留的文件 =====
+!.gitignore
+!01create_model.py
+!02predict_test_image.py
+!03predict_test_video.py
+!04predict_test_webcam.py
+!app1.py
+!app2.py
+!my_train_model.py
+!*.yaml
 
-# ===== 安全帽实验内容（不属于烟雾检测项目）=====
-hardhat.v1i.yolo26/
-hardhat_runs/
-headhat_test_images/
+# ===== 保留前端目录（需先放行目录本身，git 才会进入遍历）=====
+!yoloyolo/
+!yoloyolo/**
 
-# ===== 预训练权重（ultralytics 首次运行自动下载，无需上传）=====
-yolo26n.pt
-yolov8n.pt
-
-# ===== 训练产物：保留 best.pt，排除重复的 last.pt =====
-smoke_runs/**/weights/last.pt
-
-# ===== 运行时生成的上传/结果目录 =====
-uploads/
-results/
-
-# ===== 视频与压缩包（含超过 GitHub 100MB 限制的录屏，必须排除）=====
-*.mp4
-*.zip
-
-# ===== 前端构建产物与依赖 =====
+# ===== yoloyolo 内部仍排除构建产物与依赖 =====
 yoloyolo/unpackage/
-node_modules/
-
-# ===== 临时备份笔记 =====
-保存.txt
-新建 文本文档.txt
-无保存.txt
-最终.txt
+yoloyolo/node_modules/
