@@ -3,6 +3,7 @@
 
 # ===== 保留的文件 =====
 !.gitignore
+!README.md
 !01create_model.py
 !02predict_test_image.py
 !03predict_test_video.py
