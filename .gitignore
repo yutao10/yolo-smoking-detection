@@ -19,3 +19,11 @@
 # ===== yoloyolo 内部仍排除构建产物与依赖 =====
 yoloyolo/unpackage/
 yoloyolo/node_modules/
+
+# ===== 排除所有图片（含 yoloyolo/static/logo.png）=====
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
